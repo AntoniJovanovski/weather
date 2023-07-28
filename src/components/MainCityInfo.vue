@@ -111,7 +111,12 @@ export default {
         this.cityToCall = getCityFromLocalStorage
         if (this.cityToCall) {
             this.getCityInfo()
+        } else {
+            this.cityToCall = 'Fort Lauderdale'
+            this.getCityInfo()
         }
+
+        
     }
 }
 </script>

@@ -71,6 +71,9 @@ export default {
             const call = localStorage.getItem('city')
             this.cityToCall = call
             this.hourlyData()
+        } else {
+            this.cityToCall = 'Fort Lauderdale'
+            this.hourlyData()
         }
     }
 }
